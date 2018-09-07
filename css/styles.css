@@ -1,0 +1,141 @@
+body {
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+}
+
+fieldset {
+	border: none;
+}
+
+#title {
+	background-color: #3d4044;
+	color: #fff;
+	margin-top: 0;
+	text-align: center;
+	width: 100%;
+}
+
+hr {
+	border-color: black;
+	background-color: black;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.thick-hr {
+	height: 3px;
+}
+
+.thinner-hr {
+	height: 1.5px;
+}
+
+.text-input {
+	background-color: #edeff2;
+	border: none;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: .5em;
+	width: 100%;
+}
+
+.zip-code {
+	width: 50%;
+}
+
+textarea {
+	background-color: #edeff2;
+	border: none;
+	width: 100%;
+}
+
+button {
+	background-color: #4bccb6;
+	color: white;
+	border: none;
+	margin-top: 1em;
+	padding: 1em;
+	width: 100.7%;
+}
+
+.copyright-tcr {
+	color: lightgrey;
+	text-align: center;
+}
+
+@media (min-width: 320px) {
+	#title {
+		font-size: 1.5em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	.sign-up {
+		font-size: 1.25em;
+	}
+
+	.newsletter-details {
+		color: lightgrey;
+		font-size: 1.25em;
+		margin: 0 1em 2em 1em;
+	}
+
+	.contact-info, .newsletter-heading {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding-top: .625em;
+		padding-left: 0;
+		margin-bottom: .625em;
+	}
+
+	.form {
+		text-align: left;
+	}
+
+	.newsletters-checkbox, .newsletters-radio {
+		margin-top: .5em;
+		margin-bottom: 1em;
+	}
+
+	.newsletter-info, .newsletter-format, .other-topics-label {
+		font-size: 1.2em;
+	}
+
+	.textarea {
+		margin-top: .5em;
+	}
+
+}
+
+@media (min-width: 768px) {
+	main, .below-title {
+		margin: 0 auto;
+		width: 50%;
+	}
+
+	.contact-info-form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact-info-form label {
+		display: inline-block;
+		margin-top: 1em;
+	}
+
+	.text-input {
+		width: 50%;
+		float: right;
+	}
+
+	.state-menu {
+
+	}
+
+	.zip-code {
+		width: 25%;
+	}
+}

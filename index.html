@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Code Review</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<h1 id="title">THE CODE REVIEW</h1>
+			<div class="below-title">
+				<h1 class="sign-up">Sign Up For Our Newsletter</h1>
+				<p class="newsletter-details">Get the latest news on how your code is doing right in your inbox</p>
+				<hr class="thick-hr">
+				<hr class="thinner-hr">
+			<div>
+		</header>
+
+		<main>
+			<form action="index.html" method="post" class="form">
+				<fieldset>
+					<legend class="contact-info">Contact Information</legend>
+						<div class="contact-info-form">
+							<div>
+								<label for="fullname">Full Name:<br></label>
+								<input type="text" id="fullname" name="full_name" placeholder="Required" required class="text-input"><br> 
+							</div>
+							<div>
+								<label for="emailaddress">Email Address:<br></label>
+								<input type="email" id="emailaddress" name="email_address" placeholder="Required" required class="text-input"><br>
+							</div>
+							<div>
+								<label for="phonenumber">Phone Number:<br></label>
+								<input type="tel" id="phonenumber" name="phone_number" class="text-input"><br>
+							</div>
+							<div>
+								<label for="streetaddress">Street Address:<br></label>
+								<input type="text" id="streetaddress" name="street_address" class="text-input"><br>
+							</div>
+							<div>
+								<label for="city">City:<br></label>
+								<input type="text" id="city" name="city_choice" class="text-input"><br>
+							</div>
+							<div>
+								<label for="state">State:<br></label>
+								<select id="state" name="state_menu" class="text-input state-menu">
+									<option value="chooseastate" selected="selected" disabled="disabled">Choose a State</option>
+									<option value="california">California</option>
+									<option value="florida">Florida</option>
+									<option value="hawaii">Hawaii</option>
+									<option value="newyork">New York</option>
+									<option value="texas">Texas</option>
+								</select><br>
+							</div>
+							<div>
+								<label for="zipcode">Zip Code:<br></label>
+								<input type="text" id="zipcode" name="zip_code" class="text-input zip-code"><br>
+							</div>
+						</div>
+				</fieldset>
+
+				<hr class="thinner-hr">
+
+				<fieldset>
+
+					<legend class="newsletter-heading">Newsletter</legend>
+
+					<label class="newsletter-info">Select the newsletters you would like to receive</label>
+					<div class="newsletters-checkbox">
+						<div>
+							<input type="checkbox" id="html-news" name="language-news" value="html-news">
+							<label for="html-news">HTML News</label>
+						</div>
+						<div>
+							<input type="checkbox" id="css-news" name="language-news" value="css-news">
+							<label for="css-news">CSS News</label>
+						</div>
+						<div>
+							<input type="checkbox" id="javascript-news" name="language-news" value="javascript-news">
+							<label for="javascript-news">Javascript News</label>
+						</div>
+					</div>
+
+					<label class="newsletter-format">Newsletter Format</label>
+					
+					<div class="newsletters-radio">
+						<div>
+							<input type="radio" id="html-radio" name="format" value="HTML">
+							<label for="html-radio">HTML</label>
+						</div>
+						<div>
+							<input type="radio" id="plain-text-radio" name="format" value="plain-text">
+							<label for="plain-text-radio">Plain Text</label>
+						</div>
+					</div>
+
+					<div>
+						<label class="other-topics-label" for="other-topics-textarea">Other topics you would like to hear about</label>
+						<div class="textarea">
+							<textarea id="other-topics-textarea" name="other_topics" rows=5>
+							</textarea>
+						</div>
+						<button type="submit" name="submit-button" value="sign-up">
+							Sign Up
+						</button>
+						<p class="copyright-tcr">Copyright The Code Review</p>
+					</div>
+
+				</fieldset>
+
+			</form>
+
+		</main>
+
+	</body>
+</html>
