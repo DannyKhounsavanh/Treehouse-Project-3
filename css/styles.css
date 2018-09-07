@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0 auto;
 	text-align: center;
@@ -31,6 +35,11 @@ hr {
 	height: 1.5px;
 }
 
+.contact-info-form {
+	display: flex;
+	flex-direction: column;
+}
+
 .text-input {
 	background-color: #edeff2;
 	border: none;
@@ -50,6 +59,12 @@ textarea {
 	background-color: #edeff2;
 	border: none;
 	width: 100%;
+	resize: none;
+}
+
+.contact-info-form input:focus, textarea:focus {
+	background-color: #fcffb7;
+	outline: 3px solid #d6f4ff;
 }
 
 button {
@@ -58,7 +73,8 @@ button {
 	border: none;
 	margin-top: 1em;
 	padding: 1em;
-	width: 100.7%;
+	width: 100%;
+	cursor: pointer;
 }
 
 .copyright-tcr {
@@ -117,8 +133,7 @@ button {
 	}
 
 	.contact-info-form {
-		display: flex;
-		flex-direction: column;
+		position: relative;
 	}
 
 	.contact-info-form label {
@@ -131,11 +146,13 @@ button {
 		float: right;
 	}
 
-	.state-menu {
-
+	.zip-code {
+		width: 20%;
+		position: absolute;
+		left: 50%;
 	}
 
-	.zip-code {
-		width: 25%;
+	.thinner-hr {
+		margin: 16px;
 	}
 }
