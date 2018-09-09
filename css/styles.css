@@ -1,5 +1,10 @@
+/**************
+Base Styles
+**************/
+
+
 * {
-	box-sizing: border-box;
+	box-sizing: border-box;			/* The state menu now has the same width as other input fields */
 }
 
 body {
