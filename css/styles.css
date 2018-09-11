@@ -13,16 +13,46 @@ body {
 	font-family: 'Merriweather', serif;
 }
 
-fieldset {
-	border: none;
-}
-
 #title {
+	font-size: 1.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	background-color: #3d4044;
 	color: #fff;
 	margin-top: 0;
 	text-align: center;
 	width: 100%;
+}
+
+fieldset {
+	border: none;
+}
+
+.sign-up {
+	font-size: 1.25em;
+}
+
+.newsletter-details {
+	color: lightgrey;
+	font-size: 1.25em;
+	margin: 0 1em 2em 1em;
+}
+
+.thick-hr {
+	height: 3px;
+}
+
+.thinner-hr {
+	height: 1.5px;
+	margin: 16px;
+}
+
+.contact-info, .newsletter-heading {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-top: .625em;
+	padding-left: 0;
+	margin-bottom: .625em;
 }
 
 hr {
@@ -32,17 +62,14 @@ hr {
 	margin-right: 1em;
 }
 
-.thick-hr {
-	height: 3px;
-}
-
-.thinner-hr {
-	height: 1.5px;
-}
-
 .contact-info-form {
 	display: flex;
 	flex-direction: column;
+}
+
+.contact-info-form input:focus, textarea:focus {
+	background-color: #fcffb7;
+	outline: 3px solid #d6f4ff;
 }
 
 .text-input {
@@ -60,16 +87,25 @@ hr {
 	width: 50%;
 }
 
+.form {
+	text-align: left;
+}
+
+.newsletters-checkbox, .newsletters-radio {
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+
+.newsletter-info, .newsletter-format, .other-topics-label {
+	font-size: 1.2em;
+}
+
 textarea {
 	background-color: #edeff2;
 	border: none;
+	margin-top: .5em;
 	width: 100%;
 	resize: none;
-}
-
-.contact-info-form input:focus, textarea:focus {
-	background-color: #fcffb7;
-	outline: 3px solid #d6f4ff;
 }
 
 button {
@@ -87,51 +123,8 @@ button {
 	text-align: center;
 }
 
-@media (min-width: 320px) {
-	#title {
-		font-size: 1.5em;
-		padding-top: 1em;
-		padding-bottom: 1em;
-	}
-
-	.sign-up {
-		font-size: 1.25em;
-	}
-
-	.newsletter-details {
-		color: lightgrey;
-		font-size: 1.25em;
-		margin: 0 1em 2em 1em;
-	}
-
-	.contact-info, .newsletter-heading {
-		font-size: 1.5em;
-		font-weight: bold;
-		padding-top: .625em;
-		padding-left: 0;
-		margin-bottom: .625em;
-	}
-
-	.form {
-		text-align: left;
-	}
-
-	.newsletters-checkbox, .newsletters-radio {
-		margin-top: .5em;
-		margin-bottom: 1em;
-	}
-
-	.newsletter-info, .newsletter-format, .other-topics-label {
-		font-size: 1.2em;
-	}
-
-	.textarea {
-		margin-top: .5em;
-	}
-
-}
-
 @media (min-width: 768px) {
+
 	main, .below-title {
 		margin: 0 auto;
 		width: 50%;
@@ -157,7 +150,4 @@ button {
 		left: 50%;
 	}
 
-	.thinner-hr {
-		margin: 16px;
-	}
 }
